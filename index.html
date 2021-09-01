@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+ 
+<head> 
+
   <!-- Botstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-<head> 
-<meta charset="UTF-8">
-<title>Alert Aqui</title>
-<style>
+  <meta charset="UTF-8">
+  <title>Alert Aqui</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <!-- Botstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <style>
+  </style>
 
-  
-body{
-  background-image: url("back.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-color: rgb(6,8,66);;
-}
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-#top {
-  height: 60px;
-  list-style-type: none;
-  margin: 1;
-  padding-left: 0;
-  overflow: hidden;
-  background-color:rgb(110, 164, 202);
-}
-
-li {
-  float: left;
-}
-
-#TextoCentral{
-  padding-top:100px;
-  padding-bottom:200px;
-  color:white;
-  text-align:center;
-}
-
-#ImagensAlerta{
-
-  padding-top:100px;
-  align-content:center
-
-}
-
-#TextoAlerta{
-
-  text-align: center;
-  font-size:20px;
-
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color:rgb(57, 114, 155);
-}
-
-#map {
-  height: 90%;
-  width: 90%;
-  margin: auto;
-}
-</style>
 </head>
+
 <!-- Botstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <body onload="carregarPag()">
 
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 
-  <ul id="top" class="menutop">
-      <li><img src="logo.png" width=154 height=65></li>
-      <li><a href="#C1"> Local de Alerta </a></li>
-      <li><a href="#C2"> Quem Somos? </a></li>
-      <li><a href="#C3"> Como Funciona? </a></li>
-      <li><a href="#C4"> Denuncia Contra Violência Doméstica </a></li>
-  </ul>
-    
-  <ul id="TextoCentral">
-    <b style="padding-right:500px; font-size: 35px">VENHA FAZER PARTE!</b>
-    <br>
-    <br>
-    <b style="padding-right:100px; font-size: 30px">JUNTOS,</b>
-    <br>
-    <b style="padding-left:300px; font-size: 30px;">TORNAMOS O SEU </b><b style="color:rgba(30,171,199,255); font-size: 33px;">DIA A DIA</b>
-    <br>
-    <b style="font-size: 30px;">MAIS </b> <b style="padding-right:200px; color:rgba(30,171,199,255); font-size: 33px">SEGURO</b>
-    <br>
-    <ul id="ImagensAlerta" style="align-content:center">
-      <a href="alerta"><img src="Alerta.png" style="padding-right:400px"></a>
-      <a href="assalto"><img src="Assalto.png"></a>
-      <a href="energia"><img src="Energia.png" style="padding-left:400px"></ul></a>
-    <br>
-    <ul id="TextoAlerta"><b style="padding-right:420px">Alerta</b> <b>Assalto</b> <b style="padding-left:420px">Energia</b></ul>
-  </ul>
+
+
+
+
+
+  <!-- <ul id="top" class="">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul> -->
+  <div class="container-fluid menutop">
+    <div class="row">
+      <div class="col-3">
+        <img src="imagens/logo.png">
+      </div>
+      <div class="col-2">
+        <a href="#C1" class="menu-texto"> Local de Alerta </a>
+      </div>
+      <div class="col-2">
+        <a href="#C2" class="menu-texto" > Quem Somos? </a>
+      </div>
+      <div class="col-2">
+        <a href="#C3" class="menu-texto"> Como Funciona? </a>
+      </div>
+      <div class="col-3">
+        <a href="#C4" class="menu-texto"> Denuncia Contra Violência Doméstica </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid menuImagens">
+    <div class="row">
+      <div class="col-12">
+        <img src="imagens/banner.png">
+      </div>
+      
+      <div class="col-3"></div>
+      <div class="col-2 texto-imagens">
+        <a href="alerta.html">
+          <img src="imagens/Alerta.png">
+          <p>
+            Alerta
+          </p>
+        </a>
+      </div>
+      <div class="col-2 texto-imagens">
+       <a href="assalto.html">
+        <img src="imagens/Assalto.png">
+        <p>
+          Assalto
+        </p>
+      </a>
+      </div>
+      <div class="col-2 texto-imagens">
+        <a href="energia.html">
+        <img src="imagens/Energia.png">
+        <p>
+          Energia
+        </p>
+      </a>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
 
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
   <script
