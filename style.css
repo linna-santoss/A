@@ -8,10 +8,12 @@ body {
 
 body .menutop {
   background-color: #6ea4ca;
+  padding: 5px;
+  border-bottom: 2px solid grey;
 }
 
 body .menutop img {
-  height: 30px;
+  height: 55px;
   width: auto;
 }
 
